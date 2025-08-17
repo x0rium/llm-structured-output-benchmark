@@ -36,7 +36,7 @@ const modelProviderCombinations: ModelCombination[] = [
     // { model: "qwen3:8b", provider: null, pricing: { input: 0.075, output: 0.15 } },
 ];
 
-const parallelLimit = 1;
+const parallelLimit = parseInt(process.env.PARALLEL_LIMIT || "10") ;
 
 const oai = new OpenAI({
     baseURL: process.env.BASE_URI,
