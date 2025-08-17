@@ -1,0 +1,48 @@
+{
+  "name": "llm-structured-output-benchmark",
+  "version": "1.0.0",
+  "description": "Benchmark and compare LLMs on structured JSON extraction using @instructor-ai/instructor and Zod, via OpenRouter.",
+  "private": true,
+  "main": "main.ts",
+  "scripts": {
+    "start": "tsx main.ts",
+    "dev": "tsx watch main.ts",
+    "typecheck": "tsc --noEmit",
+    "test": "echo \"No tests specified\""
+  },
+  "keywords": [
+    "llm",
+    "benchmark",
+    "structured-output",
+    "openrouter",
+    "instructor",
+    "zod",
+    "typescript"
+  ],
+  "author": "x0rium",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/x0rium/llm-structured-output-benchmark.git"
+  },
+  "bugs": {
+    "url": "https://github.com/x0rium/llm-structured-output-benchmark/issues"
+  },
+  "homepage": "https://github.com/x0rium/llm-structured-output-benchmark",
+  "dependencies": {
+    "@instructor-ai/instructor": "^1.7.0",
+    "dotenv": "^17.2.1",
+    "https-proxy-agent": "^7.0.6",
+    "node-fetch": "2",
+    "openai": "^5.12.2",
+    "p-limit": "^7.0.0",
+    "proxy-agent": "^6.5.0",
+    "undici": "^7.13.0",
+    "zod": "^3.25.76"
+  },
+  "devDependencies": {
+    "@types/node": "^24.3.0",
+    "tsx": "^4.19.0",
+    "typescript": "^5.5.0"
+  }
+}
